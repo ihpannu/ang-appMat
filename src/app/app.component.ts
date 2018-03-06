@@ -8,13 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   answer = '';
   answerDisplay = '';
+  color = 'accent';
+  mode = 'indeterminate';
+  value = 0;
+  bufferValue = 100;
 
-  showSpinner = false;
+  showProgress = false;
   showAnswer() {
-    this.showSpinner = true;
+    this.showProgress = true;
     setTimeout(() => {
       this.answerDisplay = this.answer;
-      this.showSpinner = false;
+      this.showProgress = false;
     }, 2000);
   }
 }

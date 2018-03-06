@@ -1,10 +1,8 @@
-<mat-toolbar class=" nav">
-  <!-- <span class="example-spacer"></span> -->
+<mat-toolbar [color]="color" class=" nav">
   <mat-toolbar-row>
     <span>Ang Material App</span>
-    <!-- <span class="example-fill-remaining-space"></span> -->
-
     <span class="example-spacer"></span>
+
     <button mat-button>Home</button>
     <button mat-button>Portfolio</button>
     <button mat-button>Contact</button>
@@ -13,13 +11,14 @@
 </mat-toolbar>
 
 <mat-card>
-  <mat-form-field>
-    <input matInput [(ngModel)]="answer" placeholder="Who has the best dev tuts" />
+  <mat-form-field [color]="color" class="example-full-width">
+    <input matInput [(ngModel)]="answer" placeholder="Which Javascript Framework is best ?" />
   </mat-form-field>
+  <br>
 
   <br>
   <button mat-raised-button (click)="showAnswer()">Answer Me </button>
-  <mat-spinner color="pink" [style.display]="showSpinner ? 'block': 'none' "></mat-spinner>
+  <mat-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value" [bufferValue]="bufferValue" [style.display]="showProgress ? 'block': 'none' "></mat-progress-bar>
 </mat-card>
 
 
