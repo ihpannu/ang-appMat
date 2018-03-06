@@ -1,12 +1,12 @@
-<mat-toolbar color="primary">
+<mat-toolbar class=" nav">
   <!-- <span class="example-spacer"></span> -->
   <mat-toolbar-row>
     <span>Ang Material App</span>
     <!-- <span class="example-fill-remaining-space"></span> -->
 
     <span class="example-spacer"></span>
-    <button mat-button>About</button>
-    <button mat-button>Services</button>
+    <button mat-button>Home</button>
+    <button mat-button>Portfolio</button>
     <button mat-button>Contact</button>
   </mat-toolbar-row>
   <!-- This fills the remaining space of the current row -->
@@ -19,7 +19,7 @@
 
   <br>
   <button mat-raised-button (click)="showAnswer()">Answer Me </button>
-  <mat-spinner [style.display]="showSpinner ? 'block': 'none' "></mat-spinner>
+  <mat-spinner color="pink" [style.display]="showSpinner ? 'block': 'none' "></mat-spinner>
 </mat-card>
 
 
